@@ -3,9 +3,9 @@
 data/raw/*
 !data/raw/especes_chats_html/
 !data/raw/zoologiste-chats.html
-picture/*
-!picture/.gitkeep
-table/resume_statistique.xlsx
+pictures/*
+!pictures/.gitkeep
+tables/resume_statistique.xlsx
 
 # Python
 __pycache__/

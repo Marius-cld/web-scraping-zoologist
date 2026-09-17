@@ -8,10 +8,10 @@ suivie d'un nettoyage et d'une exploration visuelle du jeu de données obtenu.
 
 | Niveau d'activité | Répartition par pays d'origine | Top des traits de caractère |
 |---|---|---|
-| ![Niveau d'activité](figure/activite.png) | ![Pays d'origine](figure/pays.png) | ![Top caractères](figure/top_caracteres.png) |
+| ![Niveau d'activité](figures/activite.png) | ![Pays d'origine](figures/pays.png) | ![Top caractères](figures/top_caracteres.png) |
 
 D'autres graphiques (répartition des poids, de l'espérance de vie, de la santé) sont disponibles
-dans le dossier [`figure/`](figure/) et commentés dans le [notebook](notebook/graphique.ipynb).
+dans le dossier [`figures/`](figures/) et commentés dans le [notebook](notebooks/graphique.ipynb).
 
 ## Structure du projet
 
@@ -20,14 +20,14 @@ dans le dossier [`figure/`](figure/) et commentés dans le [notebook](notebook/g
 ├── src/
 │   ├── zoologiste.py       # Scraping : caractéristiques + photos des races de chats
 │   └── graphique.py        # Nettoyage des données et génération des graphiques
-├── notebook/
+├── notebooks/
 │   └── graphique.ipynb     # Version notebook, commentée, de l'analyse
 ├── data/
 │   ├── chats_dataset.csv   # Jeu de données d'exemple déjà scrappé (39 races)
 │   └── raw/                # Pages HTML brutes du scraping — généré, non versionné
-├── figure/                 # Graphiques générés par src/graphique.py
-├── picture/                # Photos des races scrappées par src/zoologiste.py — non versionné
-├── table/                  # Statistiques descriptives exportées — non versionné
+├── figures/                # Graphiques générés par src/graphique.py
+├── pictures/               # Photos des races scrappées par src/zoologiste.py — non versionné
+├── tables/                 # Statistiques descriptives exportées — non versionné
 ├── requirements.txt
 └── LICENSE
 ```
@@ -39,7 +39,7 @@ dans le dossier [`figure/`](figure/) et commentés dans le [notebook](notebook/g
    - Extraction des caractéristiques (origine, caractère, taille, poids, espérance de vie, etc.)
      par expressions régulières, et de la photo principale de chaque race via BeautifulSoup.
    - Résultat exporté dans `chats_dataset.csv`.
-2. **Nettoyage & analyse (`src/graphique.py` / `notebook/graphique.ipynb`)**
+2. **Nettoyage & analyse (`src/graphique.py` / `notebooks/graphique.ipynb`)**
    - Découpage des colonnes texte (poids, espérance de vie) en valeurs numériques min/max.
    - Regroupement des pays d'origine par continent.
    - Statistiques descriptives exportées en `.xlsx`.
@@ -68,7 +68,7 @@ python3 src/zoologiste.py
 python3 src/graphique.py
 ```
 
-Le notebook [`notebook/graphique.ipynb`](notebook/graphique.ipynb) présente la même analyse de façon narrative,
+Le notebook [`notebooks/graphique.ipynb`](notebooks/graphique.ipynb) présente la même analyse de façon narrative,
 avec les graphiques déjà générés — pratique pour parcourir le projet directement sur GitHub.
 
 ## Technologies

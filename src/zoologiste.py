@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 ROOT_DIR = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT_DIR / "data" / "raw"
 ESPECES_HTML_DIR = RAW_DIR / "especes_chats_html"
-PICTURE_DIR = ROOT_DIR / "picture"
+PICTURE_DIR = ROOT_DIR / "pictures"
 DATA_CSV = ROOT_DIR / "data" / "chats_dataset.csv"
 
 # Le site sert ses pages en UTF-8, mais son en-tête HTTP Content-Type n'indique pas
