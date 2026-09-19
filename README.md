@@ -24,10 +24,10 @@ dans le dossier [`figures/`](figures/) et commentés dans le [notebook](notebook
 │   └── graphique.ipynb     # Version notebook, commentée, de l'analyse
 ├── data/
 │   ├── chats_dataset.csv   # Jeu de données d'exemple déjà scrappé (39 races)
-│   └── raw/                # Pages HTML brutes du scraping — généré, non versionné
+│   └── raw/                # Pages HTML brutes du scraping, généré, non versionné
 ├── figures/                # Graphiques générés par src/graphique.py
-├── pictures/               # Photos des races scrappées par src/zoologiste.py — non versionné
-├── tables/                 # Statistiques descriptives exportées — non versionné
+├── pictures/               # Photos des races scrappées par src/zoologiste.py, non versionné
+├── tables/                 # Statistiques descriptives exportées, non versionné
 ├── requirements.txt
 └── LICENSE
 ```
@@ -69,7 +69,7 @@ python3 src/graphique.py
 ```
 
 Le notebook [`notebooks/graphique.ipynb`](notebooks/graphique.ipynb) présente la même analyse de façon narrative,
-avec les graphiques déjà générés — pratique pour parcourir le projet directement sur GitHub.
+avec les graphiques déjà générés, pratique pour parcourir le projet directement sur GitHub.
 
 ## Technologies
 
